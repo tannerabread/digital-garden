@@ -1,5 +1,6 @@
 .container {
   padding: 0 2rem;
+  background-image: url('../public/images/home_page_background.jpg');
 }
 
 .main {
@@ -28,14 +29,14 @@
   flex-grow: 1;
 }
 
-.title a {
-  color: #0070f3;
+.websiteTitle {
+  color: #e09c6b;
   text-decoration: none;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
+.websiteTitle:hover,
+.websiteTitle:focus,
+.websiteTitle:active {
   text-decoration: underline;
 }
 
@@ -48,6 +49,7 @@
 .title,
 .description {
   text-align: center;
+  color: #fafafa;
 }
 
 .description {
@@ -57,7 +59,8 @@
 }
 
 .code {
-  background: #fafafa;
+  background: #605253;
+  color: #fafafa;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
