@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
+
 import styles from '../styles/Home.module.css'
 import favicon from '../public/images/favicon.ico'
 
@@ -17,51 +19,34 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <span className={styles.websiteTitle}>TanneraBread</span>
+          <span className={styles.websiteTitle}>TanneraBread</span>
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
         <div className={styles.grid}>
-          <a href="/react" className={styles.card}>
-            <h2>React &rarr;</h2>
-            <p>
-              Find projects created in React without the use of extra
-              frameworks.
-            </p>
-          </a>
+          <Link href="/projects">
+            <a className={styles.card}>
+              <h2>Projects &rarr;</h2>
+              <p>
+                Find a list of all of my live projects and links to their github repos!
+              </p>
+            </a>
+          </Link>
 
-          <a href="/next" className={styles.card}>
-            <h2>Next &rarr;</h2>
-            <p>Find Next.js projects and example code from each project!</p>
-          </a>
+          <Link href="/about">
+            <a className={styles.card}>
+              <h2>About &rarr;</h2>
+              <p>Find information about me and download a copy of my resume!</p>
+            </a>
+          </Link>
 
-          <a href="/node" className={styles.card}>
-            <h2>Node &rarr;</h2>
-            <p>I only dabble in node as of the time of writing this page.</p>
-          </a>
-
-          <a href="/cypress" className={styles.card}>
-            <h2>Cypress &rarr;</h2>
-            <p>
-              Recently started testing my apps with Cypress, this is example
-              projects in that.
-            </p>
-          </a>
+          <Link href="/blog">
+            <a className={styles.card}>
+              <h2>Blog &rarr;</h2>
+              <p>Link to my blog, where I write about all things coding and dev work.</p>
+            </a>
+          </Link>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a href="" target="_blank" rel="noopener noreferrer">
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   )
 }
