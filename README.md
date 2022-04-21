@@ -16,8 +16,20 @@ yarn dev
 
 ## Cypress Tests
 
+To run in the console:
+
 ```bash
-npm run cypress
+npm run cypress:run
 # or
-yarn cypress
+yarn cypress:run
 ```
+
+To open the cypress test runner (interactive):
+Note: This does not work by default in WSL on windows, there is some configuration and a virtual linux desktop needed 
+
+```bash
+npm run cypress:open
+# or
+yarn cypress:open
+```
+
